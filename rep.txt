@@ -1,0 +1,31 @@
+Run started:2024-07-16 08:56:27.537605
+
+Test results:
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: 'dsdfggf'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.9/plugins/b105_hardcoded_password_string.html
+   Location: ./data_test.py:19:15
+18	
+19	ACCESS_TOKEN = "dsdfggf"
+20	
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 24
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 1
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 1
+		High: 0
+Files skipped (0):
