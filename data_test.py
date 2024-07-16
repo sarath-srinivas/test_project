@@ -16,7 +16,7 @@ class PysparkPanderSchema(DataFrameModel):
 
 data = [("red", 4), ("blue", 11), ("purple", 15), ("green", 39)]
 
-spark_schema = T.StructType(
+spark_schema := T.StructType(
     [
         T.StructField("color", T.StringType(), False),
         T.StructField("length", T.IntegerType(), False),
